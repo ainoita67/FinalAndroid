@@ -21,7 +21,7 @@ interface RepositorioRecetas {
                     "Mezclar todos los ingredientes.",
                     "Hornear durante 45 minutos."
                 ),
-                5
+                5f
             )
         )
 
@@ -39,7 +39,7 @@ interface RepositorioRecetas {
                     "Batir los huevos y añadir las patatas.",
                     "Cuajar la tortilla en una sartén por ambos lados."
                 ),
-                4
+                4f
             )
         )
 
@@ -57,7 +57,7 @@ interface RepositorioRecetas {
                     "Mezclar la lechuga con el pollo y los picatostes.",
                     "Añadir el queso parmesano y la salsa César."
                 ),
-                2
+                2f
             )
         )
 
@@ -77,7 +77,7 @@ interface RepositorioRecetas {
                     "Añadir la mezcla de huevo y queso fuera del fuego.",
                     "Servir con pimienta al gusto."
                 ),
-                4
+                4f
             )
         )
 
@@ -97,7 +97,7 @@ interface RepositorioRecetas {
                     "Hornear a 180 grados durante 40 minutos.",
                     "Dejar enfriar antes de servir."
                 ),
-                3
+                3f
             )
         )
 
@@ -117,7 +117,7 @@ interface RepositorioRecetas {
                     "Triturar hasta obtener una mezcla homogénea.",
                     "Refrigerar antes de servir."
                 ),
-                5
+                5f
             )
         )
     }

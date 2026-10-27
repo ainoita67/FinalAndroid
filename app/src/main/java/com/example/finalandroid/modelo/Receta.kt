@@ -8,5 +8,5 @@ data class Receta(
     var ingredientes: MutableList<String>,
     var cantidadesIngredientes: MutableList<String>,
     var instrucciones: MutableList<String>,
-    var valoracio: Int, //1-5
+    var valoracio: Float, //1-5
 )

@@ -63,7 +63,7 @@
             android:text="Tiempo de preparacion:" />
 
         <TextView
-            android:id="@+id/textCoccion"
+            android:id="@+id/textPreparacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -77,7 +77,7 @@
             android:text="Tiempo de Cocción:" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textCoccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -216,34 +216,10 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView28"
+                    android:id="@+id/textInstruccionesPrueba"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate hendrerit eros nec feugiat. Integer tortor elit, blandit vitae ipsum quis, imperdiet laoreet mi. Curabitur maximus orci in lobortis blandit. Phasellus tempus justo vel nulla posuere lacinia. Vivamus ut malesuada leo. Cras rhoncus erat quis neque suscipit malesuada. Nullam nec finibus est, id fringilla tortor. Mauris sollicitudin lacinia magna, volutpat fermentum sapien tempor quis. Etiam maximus metus vel cursus imperdiet. Nullam in elit sit amet nulla pretium malesuada. Aliquam et luctus est. Nulla mi orci, pharetra nec massa lacinia, commodo malesuada sapien. Pellentesque pharetra ligula maximus tempus commodo. Curabitur libero lacus, sodales ut quam eget, accumsan rutrum ex. Proin porta consectetur aliquam. Maecenas eu finibus nulla.  " />
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Morbi a sapien mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis vehicula mi, sed tempor tellus mattis vitae. Sed sapien tellus, finibus eget hendrerit eu, vulputate ac arcu. Aenean id pulvinar ex, vitae volutpat quam. Duis eget lacinia arcu. Phasellus malesuada quam vitae eros lobortis, sed vestibulum velit malesuada. Duis aliquet feugiat risus vitae rhoncus. Curabitur ut mattis justo. Nam a cursus enim. Ut lorem urna, ultrices sed ligula eu, fermentum luctus ipsum. Morbi in diam semper orci tempus rhoncus. Sed et tincidunt quam, id suscipit justo.  " />
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Suspendisse lobortis tellus mollis, ullamcorper mi a, pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque dui nunc, pellentesque vitae iaculis consectetur, sodales sed mauris. Proin tristique est quam, porttitor volutpat odio vulputate quis. Donec id sagittis ipsum. Nullam a mattis mauris. Praesent quis libero quam. Curabitur ultrices, sem eu hendrerit sollicitudin, urna nulla faucibus nisl, eu euismod nisi lectus eu dolor. Morbi eleifend massa quis viverra egestas. Vestibulum ac feugiat leo. Donec quis ipsum placerat, interdum neque quis, tempor felis.  " />
-
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
             </LinearLayout>
         </ScrollView>
 
