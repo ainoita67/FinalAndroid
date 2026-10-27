@@ -94,14 +94,160 @@
     <LinearLayout
         android:id="@+id/IngredientesLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#BC92EB"
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingredientes:" />
+            android:layout_margin="4dp"
+            android:text="Ingredientes:"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ingrediente" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cantidad"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ingrediente" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cantidad"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ingrediente" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cantidad"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Ingrediente" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cantidad"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/InstruccionesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Instrucciones:"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate hendrerit eros nec feugiat. Integer tortor elit, blandit vitae ipsum quis, imperdiet laoreet mi. Curabitur maximus orci in lobortis blandit. Phasellus tempus justo vel nulla posuere lacinia. Vivamus ut malesuada leo. Cras rhoncus erat quis neque suscipit malesuada. Nullam nec finibus est, id fringilla tortor. Mauris sollicitudin lacinia magna, volutpat fermentum sapien tempor quis. Etiam maximus metus vel cursus imperdiet. Nullam in elit sit amet nulla pretium malesuada. Aliquam et luctus est. Nulla mi orci, pharetra nec massa lacinia, commodo malesuada sapien. Pellentesque pharetra ligula maximus tempus commodo. Curabitur libero lacus, sodales ut quam eget, accumsan rutrum ex. Proin porta consectetur aliquam. Maecenas eu finibus nulla.  " />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Morbi a sapien mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis vehicula mi, sed tempor tellus mattis vitae. Sed sapien tellus, finibus eget hendrerit eu, vulputate ac arcu. Aenean id pulvinar ex, vitae volutpat quam. Duis eget lacinia arcu. Phasellus malesuada quam vitae eros lobortis, sed vestibulum velit malesuada. Duis aliquet feugiat risus vitae rhoncus. Curabitur ut mattis justo. Nam a cursus enim. Ut lorem urna, ultrices sed ligula eu, fermentum luctus ipsum. Morbi in diam semper orci tempus rhoncus. Sed et tincidunt quam, id suscipit justo.  " />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suspendisse lobortis tellus mollis, ullamcorper mi a, pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque dui nunc, pellentesque vitae iaculis consectetur, sodales sed mauris. Proin tristique est quam, porttitor volutpat odio vulputate quis. Donec id sagittis ipsum. Nullam a mattis mauris. Praesent quis libero quam. Curabitur ultrices, sem eu hendrerit sollicitudin, urna nulla faucibus nisl, eu euismod nisi lectus eu dolor. Morbi eleifend massa quis viverra egestas. Vestibulum ac feugiat leo. Donec quis ipsum placerat, interdum neque quis, tempor felis.  " />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+
     </LinearLayout>
 
 </LinearLayout>

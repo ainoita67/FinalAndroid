@@ -23,16 +23,16 @@ class MainActivity : AppCompatActivity() {
         listaRecetas.poblar()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_receta)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        findViewById<Button>(R.id.boton).setOnClickListener {
-            dialogoElegir()
-        }
+//        findViewById<Button>(R.id.boton).setOnClickListener {
+  //          dialogoElegir()
+    //    }
     }
 
     fun dialogoElegir(){

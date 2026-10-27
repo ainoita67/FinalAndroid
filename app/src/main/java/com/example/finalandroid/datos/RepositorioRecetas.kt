@@ -20,7 +20,8 @@ interface RepositorioRecetas {
                     "Batir los huevos con el azúcar.",
                     "Mezclar todos los ingredientes.",
                     "Hornear durante 45 minutos."
-                )
+                ),
+                5
             )
         )
 
@@ -37,7 +38,8 @@ interface RepositorioRecetas {
                     "Freír las patatas con la cebolla.",
                     "Batir los huevos y añadir las patatas.",
                     "Cuajar la tortilla en una sartén por ambos lados."
-                )
+                ),
+                4
             )
         )
 
@@ -54,7 +56,8 @@ interface RepositorioRecetas {
                     "Cocinar el pollo y cortarlo en tiras.",
                     "Mezclar la lechuga con el pollo y los picatostes.",
                     "Añadir el queso parmesano y la salsa César."
-                )
+                ),
+                2
             )
         )
 
@@ -73,7 +76,8 @@ interface RepositorioRecetas {
                     "Mezclar los espaguetis con la panceta.",
                     "Añadir la mezcla de huevo y queso fuera del fuego.",
                     "Servir con pimienta al gusto."
-                )
+                ),
+                4
             )
         )
 
@@ -92,7 +96,8 @@ interface RepositorioRecetas {
                     "Verter la mezcla en el molde.",
                     "Hornear a 180 grados durante 40 minutos.",
                     "Dejar enfriar antes de servir."
-                )
+                ),
+                3
             )
         )
 
@@ -111,7 +116,8 @@ interface RepositorioRecetas {
                     "Añadir el aceite, el vinagre y la sal.",
                     "Triturar hasta obtener una mezcla homogénea.",
                     "Refrigerar antes de servir."
-                )
+                ),
+                5
             )
         )
     }

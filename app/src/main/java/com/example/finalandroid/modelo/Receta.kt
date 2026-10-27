@@ -7,5 +7,6 @@ data class Receta(
     var tiempoCoccion: Int, //minutos
     var ingredientes: MutableList<String>,
     var cantidadesIngredientes: MutableList<String>,
-    var instrucciones: MutableList<String>
+    var instrucciones: MutableList<String>,
+    var valoracio: Int, //1-5
 )
