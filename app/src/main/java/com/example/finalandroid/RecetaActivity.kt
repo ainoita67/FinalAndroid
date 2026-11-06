@@ -1,10 +1,12 @@
 package com.example.finalandroid
 
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -26,11 +28,15 @@ class RecetaActivity : AppCompatActivity() {
 
 
         findViewById<TextView>(R.id.textTitulo).text = receta.titulo
-        findViewById<TextView>(R.id.textCategoria).text = receta.categoria
+        findViewById<TextView>(R.id.textCategoria).text = receta.categoria.name
         findViewById<TextView>(R.id.textPreparacion).text = "${receta.tiempoPreparacion} m"
         findViewById<TextView>(R.id.textCoccion).text = "${receta.tiempoCoccion} m"
         findViewById<RatingBar>(R.id.ratingBar).rating = receta.valoracio
         findViewById<TextView>(R.id.textInstruccionesPrueba).text = instrucciones
+
+        val icono = findViewById<ImageView>(R.id.icono)
+        val draw = AppCompatResources.getDrawable(this, receta.categoria.imagen)
+        icono.setImageDrawable(draw)
 
     }
 }

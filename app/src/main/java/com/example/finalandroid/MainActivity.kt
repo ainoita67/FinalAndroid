@@ -34,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.boton).setOnClickListener {
             dialogoElegir()
         }
+
+        findViewById<Button>(R.id.bLista).setOnClickListener {
+            val intent = Intent(this, ListaActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun dialogoElegir(){
