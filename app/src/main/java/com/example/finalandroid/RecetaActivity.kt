@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.finalandroid.datos.RepositorioSingleton
 
 class RecetaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +22,8 @@ class RecetaActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val receta = MainActivity.listaRecetas.buscar(idReceta)
+        val lista = RepositorioSingleton.instance.listaRecetas
+        val receta = lista.buscar(idReceta)
 
         val instrucciones = receta.instrucciones.joinToString(separator = "\n")
 

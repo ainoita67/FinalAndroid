@@ -1,17 +1,23 @@
 package com.example.finalandroid.vista
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finalandroid.MainActivity
 import com.example.finalandroid.R
+import com.example.finalandroid.RecetaActivity
+import com.example.finalandroid.datos.RepositorioSingleton
 
 class AdaptadorLista(val contexto: Context) : RecyclerView.Adapter<AdaptadorLista.CreadorItems>() {
+
+    val lista = RepositorioSingleton.instance.listaRecetas
 
     val inflador = contexto.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
@@ -20,14 +26,14 @@ class AdaptadorLista(val contexto: Context) : RecyclerView.Adapter<AdaptadorList
         viewType: Int
     ): CreadorItems {
         val vista = inflador.inflate(R.layout.tarjeta_receta, parent, false)
-        return CreadorItems(vista)
+        return CreadorItems(vista, contexto)
     }
 
     override fun onBindViewHolder(
         holder: CreadorItems,
         position: Int
     ) {
-        val receta = MainActivity.listaRecetas.buscar(position)
+        val receta = lista.buscar(position)
         val icono = holder.itemView.findViewById<ImageView>(R.id.imgCat)
         val tpreparacion = "Tiempo de preparación: ${receta.tiempoPreparacion}"
         val tcoccion = "Tiempo de cocción: ${receta.tiempoCoccion}"
@@ -45,8 +51,21 @@ class AdaptadorLista(val contexto: Context) : RecyclerView.Adapter<AdaptadorList
     }
 
     override fun getItemCount(): Int {
-        return MainActivity.listaRecetas.longitud()
+        return lista.longitud()
     }
 
-    class CreadorItems(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class CreadorItems(itemView: View, val contexto: Context) : RecyclerView.ViewHolder(itemView) {
+
+        init {
+            val layout = itemView.findViewById<LinearLayout>(R.id.base_tarjeta)
+            layout.setOnClickListener {
+                val position = bindingAdapterPosition
+                val intent = Intent(contexto, RecetaActivity::class.java)
+                intent.putExtra("idReceta", position)
+                contexto.startActivity(intent)
+
+            }
+        }
+
+    }
 }
