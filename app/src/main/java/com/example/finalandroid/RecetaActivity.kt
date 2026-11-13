@@ -12,9 +12,15 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.finalandroid.datos.RepositorioSingleton
 
 class RecetaActivity : AppCompatActivity() {
+
+    companion object {
+        const val NUMERO_RECETA = "idReceta"
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val idReceta = intent.extras?.getInt("idReceta") ?:0
+        val idReceta = intent.extras?.getInt(NUMERO_RECETA) ?:0
         enableEdgeToEdge()
         setContentView(R.layout.activity_receta)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
