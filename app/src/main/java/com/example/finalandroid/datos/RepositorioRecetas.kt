@@ -2,6 +2,8 @@ package com.example.aplicacionlista.datos
 
 import com.example.aplicacionlista.modelo.Receta
 import com.example.finalandroid.modelo.Categoria
+import com.example.finalandroid.modelo.Ingrediente
+import com.example.finalandroid.modelo.Unidad
 import kotlin.String
 
 interface RepositorioRecetas {
@@ -13,8 +15,14 @@ interface RepositorioRecetas {
                 Categoria.POSTRES,
                 25,
                 45,
-                mutableListOf("Chocolate", "Mantequilla", "Azúcar", "Huevos", "Harina"),
-                mutableListOf("200 g", "150 g", "150 g", "3 unidades", "100 g"),
+                8, // raciones
+                mutableListOf(
+                    Ingrediente("Chocolate", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Mantequilla", 150.0, Unidad.GRAMOS),
+                    Ingrediente("Azúcar", 150.0, Unidad.GRAMOS),
+                    Ingrediente("Huevos", 3.0, Unidad.UNIDADES),
+                    Ingrediente("Harina", 100.0, Unidad.GRAMOS)
+                ),
                 mutableListOf(
                     "Precalentar el horno a 180 grados.",
                     "Derretir el chocolate con la mantequilla.",
@@ -32,8 +40,14 @@ interface RepositorioRecetas {
                 Categoria.ENTRANTES,
                 15,
                 25,
-                mutableListOf("Patatas", "Huevos", "Cebolla", "Aceite de oliva", "Sal"),
-                mutableListOf("500 g", "4 unidades", "1 unidad", "50 ml", "Al gusto"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Patatas", 500.0, Unidad.GRAMOS),
+                    Ingrediente("Huevos", 4.0, Unidad.UNIDADES),
+                    Ingrediente("Cebolla", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Aceite de oliva", 50.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Pelar y cortar las patatas.",
                     "Freír las patatas con la cebolla.",
@@ -50,8 +64,14 @@ interface RepositorioRecetas {
                 Categoria.ENSALADAS,
                 15,
                 0,
-                mutableListOf("Lechuga", "Pollo", "Picatostes", "Queso parmesano", "Salsa César"),
-                mutableListOf("200 g", "150 g", "50 g", "30 g", "Al gusto"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Lechuga", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Pollo", 150.0, Unidad.GRAMOS),
+                    Ingrediente("Picatostes", 50.0, Unidad.GRAMOS),
+                    Ingrediente("Queso parmesano", 30.0, Unidad.GRAMOS),
+                    Ingrediente("Salsa César")
+                ),
                 mutableListOf(
                     "Lavar y cortar la lechuga.",
                     "Cocinar el pollo y cortarlo en tiras.",
@@ -68,8 +88,14 @@ interface RepositorioRecetas {
                 Categoria.PRIMEROS_PLATOS,
                 10,
                 15,
-                mutableListOf("Espaguetis", "Panceta", "Huevos", "Queso parmesano", "Pimienta"),
-                mutableListOf("200 g", "100 g", "2 unidades", "50 g", "Al gusto"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Espaguetis", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Panceta", 100.0, Unidad.GRAMOS),
+                    Ingrediente("Huevos", 2.0, Unidad.UNIDADES),
+                    Ingrediente("Queso parmesano", 50.0, Unidad.GRAMOS),
+                    Ingrediente("Pimienta")
+                ),
                 mutableListOf(
                     "Cocer los espaguetis en agua con sal.",
                     "Dorar la panceta en una sartén.",
@@ -88,8 +114,15 @@ interface RepositorioRecetas {
                 Categoria.POSTRES,
                 20,
                 40,
-                mutableListOf("Queso crema", "Huevos", "Azúcar", "Nata", "Galletas", "Mantequilla"),
-                mutableListOf("500 g", "3 unidades", "150 g", "200 ml", "150 g", "75 g"),
+                8, // raciones
+                mutableListOf(
+                    Ingrediente("Queso crema", 500.0, Unidad.GRAMOS),
+                    Ingrediente("Huevos", 3.0, Unidad.UNIDADES),
+                    Ingrediente("Azúcar", 150.0, Unidad.GRAMOS),
+                    Ingrediente("Nata", 200.0, Unidad.MILILITROS),
+                    Ingrediente("Galletas", 150.0, Unidad.GRAMOS),
+                    Ingrediente("Mantequilla", 75.0, Unidad.GRAMOS)
+                ),
                 mutableListOf(
                     "Triturar las galletas y mezclarlas con la mantequilla derretida.",
                     "Cubrir la base del molde con la mezcla de galletas.",
@@ -108,8 +141,16 @@ interface RepositorioRecetas {
                 Categoria.ENTRANTES,
                 15,
                 0,
-                mutableListOf("Tomates", "Pepino", "Pimiento verde", "Ajo", "Aceite de oliva", "Vinagre", "Sal"),
-                mutableListOf("1 kg", "1 unidad", "1 unidad", "1 diente", "50 ml", "20 ml", "Al gusto"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Tomates", 1.0, Unidad.KILOS),
+                    Ingrediente("Pepino", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Pimiento verde", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Ajo", 1.0, Unidad.DIENTES),
+                    Ingrediente("Aceite de oliva", 50.0, Unidad.MILILITROS),
+                    Ingrediente("Vinagre", 20.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Lavar y trocear los tomates, el pepino y el pimiento.",
                     "Pelar el ajo.",
@@ -128,8 +169,13 @@ interface RepositorioRecetas {
                 Categoria.DESAYUNOS,
                 5,
                 3,
-                mutableListOf("Pan", "Tomate", "Aceite de oliva", "Sal"),
-                mutableListOf("2 rebanadas", "1 unidad", "20 ml", "Al gusto"),
+                1, // raciones
+                mutableListOf(
+                    Ingrediente("Pan", 2.0, Unidad.REBANADAS),
+                    Ingrediente("Tomate", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Aceite de oliva", 20.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Tostar las rebanadas de pan.",
                     "Rallar el tomate.",
@@ -146,8 +192,14 @@ interface RepositorioRecetas {
                 Categoria.DESAYUNOS,
                 10,
                 15,
-                mutableListOf("Harina", "Leche", "Huevos", "Levadura", "Miel"),
-                mutableListOf("200 g", "250 ml", "2 unidades", "1 cucharadita", "Al gusto"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Harina", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Leche", 250.0, Unidad.MILILITROS),
+                    Ingrediente("Huevos", 2.0, Unidad.UNIDADES),
+                    Ingrediente("Levadura", 1.0, Unidad.CUCHARADITAS),
+                    Ingrediente("Miel")
+                ),
                 mutableListOf(
                     "Mezclar la harina con la levadura.",
                     "Añadir la leche y los huevos y batir hasta que no haya grumos.",
@@ -165,8 +217,15 @@ interface RepositorioRecetas {
                 Categoria.SEGUNDOS_PLATOS,
                 15,
                 60,
-                mutableListOf("Muslos de pollo", "Limón", "Ajo", "Romero", "Aceite de oliva", "Sal"),
-                mutableListOf("4 unidades", "1 unidad", "3 dientes", "Al gusto", "40 ml", "Al gusto"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Muslos de pollo", 4.0, Unidad.UNIDADES),
+                    Ingrediente("Limón", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Ajo", 3.0, Unidad.DIENTES),
+                    Ingrediente("Romero"),
+                    Ingrediente("Aceite de oliva", 40.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Precalentar el horno a 200 grados.",
                     "Colocar el pollo en una bandeja con el ajo y el romero.",
@@ -183,8 +242,14 @@ interface RepositorioRecetas {
                 Categoria.SEGUNDOS_PLATOS,
                 10,
                 10,
-                mutableListOf("Merluza", "Ajo", "Perejil", "Aceite de oliva", "Sal"),
-                mutableListOf("2 lomos", "2 dientes", "Al gusto", "30 ml", "Al gusto"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Lomos de merluza", 2.0, Unidad.UNIDADES),
+                    Ingrediente("Ajo", 2.0, Unidad.DIENTES),
+                    Ingrediente("Perejil"),
+                    Ingrediente("Aceite de oliva", 30.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Salar los lomos de merluza.",
                     "Calentar una plancha con un poco de aceite.",
@@ -201,8 +266,15 @@ interface RepositorioRecetas {
                 Categoria.ACOMPANAMIENTOS,
                 15,
                 45,
-                mutableListOf("Patatas", "Cebolla", "Ajo", "Aceite de oliva", "Perejil", "Sal"),
-                mutableListOf("600 g", "1 unidad", "2 dientes", "50 ml", "Al gusto", "Al gusto"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Patatas", 600.0, Unidad.GRAMOS),
+                    Ingrediente("Cebolla", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Ajo", 2.0, Unidad.DIENTES),
+                    Ingrediente("Aceite de oliva", 50.0, Unidad.MILILITROS),
+                    Ingrediente("Perejil"),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Precalentar el horno a 190 grados.",
                     "Cortar las patatas y la cebolla en rodajas finas.",
@@ -220,8 +292,13 @@ interface RepositorioRecetas {
                 Categoria.ACOMPANAMIENTOS,
                 5,
                 18,
-                mutableListOf("Arroz", "Agua", "Aceite de oliva", "Sal"),
-                mutableListOf("200 g", "400 ml", "20 ml", "Al gusto"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Arroz", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Agua", 400.0, Unidad.MILILITROS),
+                    Ingrediente("Aceite de oliva", 20.0, Unidad.MILILITROS),
+                    Ingrediente("Sal")
+                ),
                 mutableListOf(
                     "Rehogar el arroz con el aceite.",
                     "Añadir el agua y la sal.",
@@ -238,8 +315,14 @@ interface RepositorioRecetas {
                 Categoria.BEBIDAS,
                 10,
                 0,
-                mutableListOf("Limones", "Azúcar", "Agua", "Hielo", "Menta"),
-                mutableListOf("4 unidades", "80 g", "1 l", "Al gusto", "Unas hojas"),
+                4, // raciones
+                mutableListOf(
+                    Ingrediente("Limones", 4.0, Unidad.UNIDADES),
+                    Ingrediente("Azúcar", 80.0, Unidad.GRAMOS),
+                    Ingrediente("Agua", 1.0, Unidad.LITROS),
+                    Ingrediente("Hielo"),
+                    Ingrediente("Menta")
+                ),
                 mutableListOf(
                     "Exprimir los limones.",
                     "Disolver el azúcar en el zumo con un poco de agua.",
@@ -256,8 +339,13 @@ interface RepositorioRecetas {
                 Categoria.BEBIDAS,
                 5,
                 0,
-                mutableListOf("Fresas", "Leche", "Plátano", "Miel"),
-                mutableListOf("200 g", "300 ml", "1 unidad", "1 cucharada"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Fresas", 200.0, Unidad.GRAMOS),
+                    Ingrediente("Leche", 300.0, Unidad.MILILITROS),
+                    Ingrediente("Plátano", 1.0, Unidad.UNIDADES),
+                    Ingrediente("Miel", 1.0, Unidad.CUCHARADAS)
+                ),
                 mutableListOf(
                     "Lavar y quitar el rabito a las fresas.",
                     "Pelar el plátano y trocearlo.",
@@ -274,8 +362,14 @@ interface RepositorioRecetas {
                 Categoria.ENSALADAS,
                 10,
                 0,
-                mutableListOf("Tomates", "Atún en lata", "Cebolla", "Aceitunas", "Aceite de oliva"),
-                mutableListOf("3 unidades", "2 latas", "1/2 unidad", "50 g", "30 ml"),
+                2, // raciones
+                mutableListOf(
+                    Ingrediente("Tomates", 3.0, Unidad.UNIDADES),
+                    Ingrediente("Atún en lata", 2.0, Unidad.LATAS),
+                    Ingrediente("Cebolla", 0.5, Unidad.UNIDADES),
+                    Ingrediente("Aceitunas", 50.0, Unidad.GRAMOS),
+                    Ingrediente("Aceite de oliva", 30.0, Unidad.MILILITROS)
+                ),
                 mutableListOf(
                     "Cortar los tomates y la cebolla.",
                     "Mezclarlos en un bol con el atún y las aceitunas.",

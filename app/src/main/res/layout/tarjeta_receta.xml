@@ -39,5 +39,11 @@
             android:layout_height="wrap_content"
             android:text="Tiempo de coccion: 40 min" />
 
+        <TextView
+            android:id="@+id/raciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Raciones: 4" />
+
     </LinearLayout>
 </LinearLayout>

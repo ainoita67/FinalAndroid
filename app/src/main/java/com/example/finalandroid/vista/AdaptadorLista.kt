@@ -47,6 +47,8 @@ class AdaptadorLista(val contexto: Context) : RecyclerView.Adapter<AdaptadorList
             .text = tpreparacion
         holder.itemView.findViewById<TextView>(R.id.coccion)
             .text = tcoccion
+        holder.itemView.findViewById<TextView>(R.id.raciones)
+            .text = "Raciones: ${receta.raciones}"
 
     }
 
