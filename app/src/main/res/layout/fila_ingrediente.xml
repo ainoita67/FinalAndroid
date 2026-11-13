@@ -12,7 +12,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:text="Ingrediente" />
+        android:text="Ingrediente"
+        android:fontFamily="monospace"
+        android:textColor="@color/petroleo" />
 
     <TextView
         android:id="@+id/textCantidadIngrediente"
@@ -20,5 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="200 g"
-        android:textAlignment="textEnd" />
+        android:textAlignment="textEnd"
+        android:fontFamily="monospace"
+        android:textColor="@color/petroleo" />
 </LinearLayout>

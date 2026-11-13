@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/crema"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,13 +13,14 @@
         android:id="@+id/Titulo"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#DEAF2C"
-        android:fontFamily="sans-serif-medium"
+        android:background="@color/petroleo"
+        android:fontFamily="monospace"
         android:padding="4dp"
         android:text="Mis Recetas"
         android:textAlignment="center"
+        android:textColor="@color/crema"
         android:textSize="34sp"
-        android:typeface="normal" />
+        android:textStyle="bold" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"

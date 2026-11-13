@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/crema"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -9,6 +10,8 @@
 
     <Button
         android:id="@+id/bBorrar"
+        android:backgroundTint="@color/mostaza"
+        android:textColor="@color/petroleo"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:insetTop="0dp"
@@ -21,10 +24,14 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bDividir"
+        android:backgroundTint="@color/verde"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:insetTop="0dp"
@@ -37,10 +44,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bBorrar"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bMultiplicar"
+        android:backgroundTint="@color/verde"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:insetTop="0dp"
@@ -53,10 +65,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bDividir"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bRestar"
+        android:backgroundTint="@color/verde"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:insetTop="0dp"
@@ -69,10 +86,15 @@
         app:layout_constraintStart_toEndOf="@+id/bMultiplicar"
         app:layout_constraintTop_toBottomOf="@+id/resultado"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/bSumar" />
+        app:layout_constraintBottom_toTopOf="@+id/bSumar"
+        android:fontFamily="monospace"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bSumar"
+        android:backgroundTint="@color/verde"
         android:layout_width="80dp"
         android:layout_height="160dp"
         android:insetTop="0dp"
@@ -85,10 +107,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b9"
         app:layout_constraintTop_toBottomOf="@+id/bRestar"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bIgual"
+        android:backgroundTint="@color/petroleo"
         android:layout_width="80dp"
         android:layout_height="240dp"
         android:insetTop="0dp"
@@ -101,7 +128,11 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b3"
         app:layout_constraintTop_toBottomOf="@+id/bSumar"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b6"
@@ -117,7 +148,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b5"
         app:layout_constraintTop_toBottomOf="@+id/b9"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b8"
@@ -133,7 +169,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b7"
         app:layout_constraintTop_toBottomOf="@+id/bDividir"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b1"
@@ -149,7 +190,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b4"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/bComa"
@@ -165,7 +211,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b0"
         app:layout_constraintTop_toBottomOf="@+id/b3"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b0"
@@ -181,7 +232,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b1"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b7"
@@ -197,7 +253,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bBorrar"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b3"
@@ -213,7 +274,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b2"
         app:layout_constraintTop_toBottomOf="@+id/b6"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b4"
@@ -229,7 +295,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b7"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b2"
@@ -245,7 +316,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b1"
         app:layout_constraintTop_toBottomOf="@+id/b5"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b9"
@@ -261,7 +337,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b8"
         app:layout_constraintTop_toBottomOf="@+id/bMultiplicar"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <Button
         android:id="@+id/b5"
@@ -277,7 +358,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/b4"
         app:layout_constraintTop_toBottomOf="@+id/b8"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/naranja"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
 
     <TextView
         android:id="@+id/resultado"
@@ -285,8 +371,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_pantalla_calculadora"
+        android:fontFamily="monospace"
+        android:padding="12dp"
         android:text="0"
         android:textAlignment="textEnd"
+        android:textColor="@color/mostaza"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/bBorrar"
         app:layout_constraintEnd_toEndOf="parent"

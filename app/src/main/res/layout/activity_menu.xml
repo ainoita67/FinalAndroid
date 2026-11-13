@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
-    android:background="#F3F4F8"
+    android:background="@color/crema"
     android:fillViewport="true"
     tools:context=".MenuActivity">
 
@@ -21,8 +21,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
             android:text="Menú principal"
-            android:textColor="#1F2937"
+            android:textColor="@color/petroleo"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -44,9 +46,11 @@
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardBackgroundColor="#4F46E5"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/verde"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/petroleo"
+                app:strokeWidth="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -58,16 +62,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="🧮"
-                        android:textSize="48sp" />
+                        android:textSize="48sp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Calculadora"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="monospace" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -80,9 +87,11 @@
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardBackgroundColor="#059669"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/petroleo"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/petroleo"
+                app:strokeWidth="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -95,7 +104,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="💱"
-                        android:textSize="48sp" />
+                        android:textSize="48sp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -103,9 +114,10 @@
                         android:layout_marginTop="8dp"
                         android:gravity="center"
                         android:text="Conversor de moneda"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="monospace" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -118,9 +130,11 @@
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardBackgroundColor="#EA580C"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/naranja"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/petroleo"
+                app:strokeWidth="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -132,16 +146,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="🍳"
-                        android:textSize="48sp" />
+                        android:textSize="48sp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Mis recetas"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="monospace" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -154,9 +171,11 @@
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardBackgroundColor="#DB2777"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp">
+                app:cardBackgroundColor="@color/mostaza"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/petroleo"
+                app:strokeWidth="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -168,16 +187,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="🎮"
-                        android:textSize="48sp" />
+                        android:textSize="48sp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Juegos"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/petroleo"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="monospace" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
