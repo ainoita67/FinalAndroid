@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta retro de la app -->
+    <color name="crema">#F6E2B3</color>
+    <color name="mostaza">#E7A84E</color>
+    <color name="naranja">#D96C2C</color>
+    <color name="verde">#3E8E7E</color>
+    <color name="petroleo">#274C56</color>
+    <!-- Petróleo más claro: textos de ayuda (hint) sobre el bloque mostaza -->
+    <color name="petroleo_suave">#3A5560</color>
+
+    <!-- Morado del fondo del logo (para el icono de la app) -->
+    <color name="morado_logo">#5A4589</color>
 </resources>

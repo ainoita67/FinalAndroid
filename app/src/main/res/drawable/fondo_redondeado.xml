@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bloque retro: relleno mostaza, borde grueso color petróleo y esquinas poco redondeadas -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/mostaza" />
+
+    <stroke
+        android:width="3dp"
+        android:color="@color/petroleo" />
+
+    <corners android:radius="8dp" />
+
+</shape>

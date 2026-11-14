@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalAndroid">
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -22,9 +22,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CalculadoraActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecetaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NuevaRecetaActivity"
+            android:exported="false" />
         <activity
             android:name=".ListaActivity"
             android:exported="false"

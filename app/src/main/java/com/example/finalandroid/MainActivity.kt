@@ -16,12 +16,7 @@ import com.example.aplicacionlista.datos.ListaRecetas
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
-        val listaRecetas = ListaRecetas()
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
-        listaRecetas.poblar()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)

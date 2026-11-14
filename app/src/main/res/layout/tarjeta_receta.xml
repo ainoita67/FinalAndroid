@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/base_tarjeta"
     android:layout_width="match_parent"
-    android:layout_height="130dp">
+    android:layout_height="130dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/fondo_redondeado"
+    android:padding="6dp">
 
     <ImageView
         android:id="@+id/imgCat"
@@ -24,20 +27,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Receta Primera"
+            android:textColor="@color/petroleo"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
 
         <TextView
             android:id="@+id/preparacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tiempo de preparacion: 20 min" />
+            android:text="Tiempo de preparacion: 20 min"
+            android:fontFamily="monospace"
+            android:textColor="@color/petroleo" />
 
         <TextView
             android:id="@+id/coccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tiempo de coccion: 40 min" />
+            android:text="Tiempo de coccion: 40 min"
+            android:fontFamily="monospace"
+            android:textColor="@color/petroleo" />
+
+        <TextView
+            android:id="@+id/raciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Raciones: 4"
+            android:fontFamily="monospace"
+            android:textColor="@color/petroleo" />
 
     </LinearLayout>
 </LinearLayout>

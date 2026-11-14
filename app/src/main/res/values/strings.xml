@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">FinalAndroid</string>
+
+    <!-- Opciones del desplegable de unidad.
+         La primera es "al gusto" (sin unidad); el resto, mismo orden que en Unidad.kt -->
+    <string-array name="unidades">
+        <item>al gusto</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>unidades</item>
+        <item>dientes</item>
+        <item>rebanadas</item>
+        <item>lomos</item>
+        <item>latas</item>
+        <item>cucharadas</item>
+        <item>cucharaditas</item>
+    </string-array>
 </resources>

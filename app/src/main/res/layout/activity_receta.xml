@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/crema"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,218 +13,314 @@
         android:id="@+id/textTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/petroleo"
+        android:fontFamily="monospace"
         android:padding="8dp"
         android:text="Mi Receta"
+        android:textColor="@color/crema"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/icono"
+    <!-- Todo lo de debajo del título hace scroll, para que las flechas
+         de los pasos se vean aunque la receta tenga muchos ingredientes.
+         height="0dp" + weight="1" = ocupa todo el hueco que queda -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="128dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Categoría: " />
-
-        <TextView
-            android:id="@+id/textCategoria"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Postres" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Tiempo de preparacion:" />
-
-        <TextView
-            android:id="@+id/textPreparacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="20 m" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Tiempo de Cocción:" />
-
-        <TextView
-            android:id="@+id/textCoccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="30 m" />
-    </LinearLayout>
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:rating="3" />
-
-    <LinearLayout
-        android:id="@+id/IngredientesLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="#BC92EB"
-        android:orientation="vertical"
-        android:padding="8dp">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:text="Ingredientes:"
-            android:textSize="20sp" />
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Ingrediente" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cantidad"
-                android:textAlignment="textEnd" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Ingrediente" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cantidad"
-                android:textAlignment="textEnd" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Ingrediente" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cantidad"
-                android:textAlignment="textEnd" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Ingrediente" />
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cantidad"
-                android:textAlignment="textEnd" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/InstruccionesLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:padding="8dp">
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:text="Instrucciones:"
-            android:textSize="20sp" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icono"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginTop="16dp"
+                tools:srcCompat="@tools:sample/avatars" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textInstruccionesPrueba"
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Categoría: "
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+
+                <TextView
+                    android:id="@+id/textCategoria"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Postres"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+            </LinearLayout>
+
+            <!-- Fila de raciones, igual que la de Categoría -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textEtiquetaRaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Raciones: "
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+
+                <TextView
+                    android:id="@+id/textRaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="4 raciones"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+            </LinearLayout>
+
+            <!-- Los tiempos van en dos filas: con la letra monospace no cabían en una -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preparación:"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+
+                <TextView
+                    android:id="@+id/textPreparacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="20 m"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cocción:"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+
+                <TextView
+                    android:id="@+id/textCoccion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="30 m"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/petroleo" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:progressTint="@color/naranja"
+                android:rating="3" />
+
+            <!-- Botones de editar y eliminar, cada uno ocupa la mitad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonEditar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/verde"
+                    android:fontFamily="monospace"
+                    android:minHeight="48dp"
+                    android:text="Editar"
+                    android:textColor="@color/crema"
+                    android:textStyle="bold"
+                    app:cornerRadius="6dp" />
+
+                <Button
+                    android:id="@+id/botonEliminar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:backgroundTint="@color/naranja"
+                    android:fontFamily="monospace"
+                    android:minHeight="48dp"
+                    android:text="Eliminar"
+                    android:textColor="@color/crema"
+                    android:textStyle="bold"
+                    app:cornerRadius="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IngredientesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/fondo_redondeado"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate hendrerit eros nec feugiat. Integer tortor elit, blandit vitae ipsum quis, imperdiet laoreet mi. Curabitur maximus orci in lobortis blandit. Phasellus tempus justo vel nulla posuere lacinia. Vivamus ut malesuada leo. Cras rhoncus erat quis neque suscipit malesuada. Nullam nec finibus est, id fringilla tortor. Mauris sollicitudin lacinia magna, volutpat fermentum sapien tempor quis. Etiam maximus metus vel cursus imperdiet. Nullam in elit sit amet nulla pretium malesuada. Aliquam et luctus est. Nulla mi orci, pharetra nec massa lacinia, commodo malesuada sapien. Pellentesque pharetra ligula maximus tempus commodo. Curabitur libero lacus, sodales ut quam eget, accumsan rutrum ex. Proin porta consectetur aliquam. Maecenas eu finibus nulla.  " />
+                    android:layout_margin="4dp"
+                    android:text="Ingredientes:"
+                    android:textColor="@color/petroleo"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+
+                <!-- Aquí dentro el Kotlin añade una fila por cada ingrediente
+                     (cada fila sale de fila_ingrediente.xml) -->
+                <LinearLayout
+                    android:id="@+id/listaIngredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp" />
             </LinearLayout>
-        </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/InstruccionesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Instrucciones:"
+                    android:textColor="@color/petroleo"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace" />
+
+                <!-- Tarjeta que muestra UN solo paso de la receta -->
+                <LinearLayout
+                    android:id="@+id/tarjetaPaso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_redondeado"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- "Paso X de Y": mismo estilo que el nombre en tarjeta_receta.xml -->
+                    <TextView
+                        android:id="@+id/textNumeroPaso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paso 1 de 5"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
+
+                    <!-- Texto del paso actual -->
+                    <TextView
+                        android:id="@+id/textPaso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:minLines="3"
+                        android:text="Texto del paso"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/petroleo" />
+
+                    <!-- Fila con las dos flechas -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/botonAnterior"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="◀ Anterior"
+                            android:fontFamily="monospace"
+                            android:backgroundTint="@color/naranja"
+                            android:textColor="@color/crema"
+                            android:textStyle="bold"
+                            app:cornerRadius="6dp" />
+
+                        <!-- Hueco vacío que empuja el segundo botón a la derecha -->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/botonSiguiente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Siguiente ▶"
+                            android:fontFamily="monospace"
+                            android:backgroundTint="@color/naranja"
+                            android:textColor="@color/crema"
+                            android:textStyle="bold"
+                            app:cornerRadius="6dp" />
+                    </LinearLayout>
+                </LinearLayout>
 
 
-    </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
