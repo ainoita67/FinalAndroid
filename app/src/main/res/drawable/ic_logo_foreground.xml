@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- El logo con 13dp de margen por cada lado.
+     Sin este margen, el móvil recorta las esquinas del dibujo al darle forma redonda. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/logoapp"
+    android:inset="13dp" />

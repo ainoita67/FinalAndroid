@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RatingBar
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
@@ -100,6 +102,20 @@ class RecetaActivity : AppCompatActivity() {
         }
 
         mostrarPaso()
+
+        // --- Eliminar receta: primero se pide confirmación ---
+        findViewById<Button>(R.id.botonEliminar).setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("Eliminar receta")
+                .setMessage("¿Seguro que quieres eliminar \"${receta.titulo}\"? No se puede deshacer.")
+                .setPositiveButton("Eliminar") { _, _ ->
+                    lista.borrar(idReceta)
+                    Toast.makeText(this, "Receta eliminada", Toast.LENGTH_SHORT).show()
+                    finish()  // vuelve a la lista
+                }
+                .setNegativeButton("Cancelar", null)  // null = solo cierra el diálogo
+                .show()
+        }
     }
 }
 

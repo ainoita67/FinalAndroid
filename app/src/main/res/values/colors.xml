@@ -11,4 +11,7 @@
     <color name="petroleo">#274C56</color>
     <!-- Petróleo más claro: textos de ayuda (hint) sobre el bloque mostaza -->
     <color name="petroleo_suave">#3A5560</color>
+
+    <!-- Morado del fondo del logo (para el icono de la app) -->
+    <color name="morado_logo">#5A4589</color>
 </resources>
