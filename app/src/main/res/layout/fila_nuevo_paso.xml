@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un paso del formulario: texto del paso + botón quitar -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editPaso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/petroleo"
+        android:fontFamily="monospace"
+        android:hint="Describe el paso"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minHeight="48dp"
+        android:textColor="@color/petroleo"
+        android:textColorHint="@color/petroleo_suave" />
+
+    <Button
+        android:id="@+id/botonQuitarPaso"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/naranja"
+        android:contentDescription="Quitar este paso"
+        android:fontFamily="monospace"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:padding="0dp"
+        android:text="✕"
+        android:textColor="@color/crema"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
+</LinearLayout>

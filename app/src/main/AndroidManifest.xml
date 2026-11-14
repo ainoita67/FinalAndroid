@@ -33,6 +33,9 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name=".NuevaRecetaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

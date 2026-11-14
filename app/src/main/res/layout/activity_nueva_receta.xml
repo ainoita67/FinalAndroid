@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/crema"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NuevaRecetaActivity">
+
+    <!-- Cabecera, igual que la de la lista -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/petroleo"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Nueva receta"
+        android:textColor="@color/crema"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- El formulario hace scroll; weight="1" ocupa todo el hueco
+         y deja el botón Guardar siempre visible abajo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/editTitulo"
+                android:text="Nombre de la receta"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/petroleo"
+                android:fontFamily="monospace"
+                android:hint="Ej: Tortilla de patatas"
+                android:inputType="textCapSentences"
+                android:minHeight="48dp"
+                android:textColor="@color/petroleo"
+                android:textColorHint="@color/verde" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/spinnerCategoria"
+                android:text="Categoría"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/editPreparacion"
+                android:text="Tiempo de preparación (minutos)"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editPreparacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/petroleo"
+                android:fontFamily="monospace"
+                android:hint="Ej: 15"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/petroleo"
+                android:textColorHint="@color/verde" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/editCoccion"
+                android:text="Tiempo de cocción (minutos)"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editCoccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/petroleo"
+                android:fontFamily="monospace"
+                android:hint="Ej: 30"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/petroleo"
+                android:textColorHint="@color/verde" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/editRaciones"
+                android:text="Raciones"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editRaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/petroleo"
+                android:fontFamily="monospace"
+                android:hint="Ej: 4"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/petroleo"
+                android:textColorHint="@color/verde" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:labelFor="@id/ratingNueva"
+                android:text="Valoración"
+                android:textColor="@color/petroleo"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingNueva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="Valoración de 1 a 5 estrellas"
+                android:numStars="5"
+                android:progressTint="@color/naranja"
+                android:rating="3"
+                android:stepSize="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fondo_redondeado"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Ingredientes:"
+                    android:textColor="@color/petroleo"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Aquí el Kotlin añade las filas -->
+                <LinearLayout
+                    android:id="@+id/contenedorIngredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/botonAnadirIngrediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/verde"
+                    android:fontFamily="monospace"
+                    android:minHeight="48dp"
+                    android:text="+ Añadir ingrediente"
+                    android:textColor="@color/crema"
+                    android:textStyle="bold"
+                    app:cornerRadius="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fondo_redondeado"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Pasos:"
+                    android:textColor="@color/petroleo"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Aquí el Kotlin añade las filas -->
+                <LinearLayout
+                    android:id="@+id/contenedorPasos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/botonAnadirPaso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/verde"
+                    android:fontFamily="monospace"
+                    android:minHeight="48dp"
+                    android:text="+ Añadir paso"
+                    android:textColor="@color/crema"
+                    android:textStyle="bold"
+                    app:cornerRadius="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/botonGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/naranja"
+        android:fontFamily="monospace"
+        android:minHeight="56dp"
+        android:text="Guardar receta"
+        android:textColor="@color/crema"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
+
+</LinearLayout>

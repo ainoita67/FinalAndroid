@@ -41,7 +41,7 @@ class RecetaActivity : AppCompatActivity() {
 
 
         findViewById<TextView>(R.id.textTitulo).text = receta.titulo
-        findViewById<TextView>(R.id.textCategoria).text = receta.categoria.name
+        findViewById<TextView>(R.id.textCategoria).text = receta.categoria.texto
         findViewById<TextView>(R.id.textPreparacion).text = "${receta.tiempoPreparacion} m"
         findViewById<TextView>(R.id.textCoccion).text = "${receta.tiempoCoccion} m"
         findViewById<TextView>(R.id.textRaciones).text = receta.racionesTexto()
