@@ -34,7 +34,7 @@ class MenuActivity : AppCompatActivity() {
         }
 
         findViewById<MaterialCardView>(R.id.cardJuegos).setOnClickListener {
-            startActivity(Intent(this, DadosActivity::class.java))
+            startActivity(Intent(this, MenuJuegosActivity::class.java))
         }
     }
 }

@@ -29,19 +29,15 @@
             android:textStyle="bold" />
 
         <!-- Rejilla 2x2 de opciones -->
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:columnCount="2"
-            android:rowCount="2"
-            android:useDefaultMargins="false">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <!-- Calculadora -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardCalculadora"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:clickable="true"
@@ -61,28 +57,27 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🧮"
-                        android:textSize="48sp"
                         android:fontFamily="monospace"
-                        android:textColor="@color/petroleo" />
+                        android:text="🧮"
+                        android:textColor="@color/petroleo"
+                        android:textSize="48sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
                         android:text="Calculadora"
                         android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:fontFamily="monospace" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Conversor de moneda -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardConversor"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:clickable="true"
@@ -103,29 +98,28 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="💱"
-                        android:textSize="48sp"
                         android:fontFamily="monospace"
-                        android:textColor="@color/petroleo" />
+                        android:text="💱"
+                        android:textColor="@color/petroleo"
+                        android:textSize="48sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
                         android:gravity="center"
                         android:text="Conversor de moneda"
                         android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:fontFamily="monospace" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Mis recetas -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardRecetas"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:clickable="true"
@@ -145,28 +139,27 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🍳"
-                        android:textSize="48sp"
                         android:fontFamily="monospace"
-                        android:textColor="@color/petroleo" />
+                        android:text="🍳"
+                        android:textColor="@color/petroleo"
+                        android:textSize="48sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
                         android:text="Mis recetas"
                         android:textColor="@color/crema"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:fontFamily="monospace" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Juegos -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardJuegos"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:clickable="true"
@@ -186,23 +179,23 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🎮"
-                        android:textSize="48sp"
                         android:fontFamily="monospace"
-                        android:textColor="@color/petroleo" />
+                        android:text="🎮"
+                        android:textColor="@color/petroleo"
+                        android:textSize="48sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="monospace"
                         android:text="Juegos"
                         android:textColor="@color/petroleo"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:fontFamily="monospace" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
-        </GridLayout>
     </LinearLayout>
 </ScrollView>
