@@ -34,7 +34,7 @@ class MenuActivity : AppCompatActivity() {
         }
 
         findViewById<MaterialCardView>(R.id.cardJuegos).setOnClickListener {
-            Toast.makeText(this, "Próximamente", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MenuJuegosActivity::class.java))
         }
     }
 }

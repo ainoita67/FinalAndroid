@@ -36,6 +36,15 @@
             android:name=".NuevaRecetaActivity"
             android:exported="false" />
         <activity
+            android:name=".MenuJuegosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LucesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
